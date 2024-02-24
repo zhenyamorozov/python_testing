@@ -9,3 +9,7 @@ def test_add():
 def test_divide():
     result = my_functions.divide(10, 5)
     assert result == 2
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        result = my_functions.divide(10, 0)
